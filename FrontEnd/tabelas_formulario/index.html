@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>formularios</h1>
+
+    <form action="cadastrar" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="Idnome">Nome:</label>
+            <input type="text" name="nome" required id="Idnome" placeholder="Digite seu nome" autofocus><br>
+
+            <label for="idsenha">senha: </label>
+            <input type="password" name="senha" id="idsenha" maxlength="12" required placeholder="Digite sua senha" autofocus><br>
+
+            <label for="idemail">E-mail:</label>
+            <input type="email" name="" id="idemail" placeholder="Digite seu email"><br>
+
+            <label for="idsite">Site:</label>
+            <input type="url" name="Site" id="idsite"><br>
+
+            <label for="idbusca">Busca:</label>
+            <input type="search" name="Busca" id="idbusca"><br>
+
+            <label for="iddata">Data:</label>
+            <input type="date" name="Data" id="iddata"><br>
+
+            <label for="idhora">Hora:</label>
+            <input type="time" name="Hora" id="idhora"><br>
+
+
+            <label for="idquant">Quantidade</label>
+            <input type="number" name="Quantidade" min="0" step="0.01" max="50" id="idquant"><br>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Tamanho</legend>
+            <input type="radio" name="tamanho" id="idpeq" value="P">
+            <label for="idpeq">pequenho</label>
+
+            <input type="radio" name="tamanho" id="idmed" value="M">
+            <label for="idmed">medio</label>
+
+            <input type="radio" name="tamanho" id="idgrd" value="G">
+            <label for="idgrd">grande</label>
+        </fieldset>
+        <fieldset>
+            <legend>Cores</legend>
+            <input type="checkbox" name="cor" id="idazul" value="Azul">
+            <label for="idazul">Azul</label><br>
+
+            <input type="checkbox" name="cor" id="idavermelho" value="Vermelho">
+            <label for="idavermelho">vermelho</label><br>
+
+            <input type="checkbox" name="cor" id="idaverde" value="Verde">
+            <label for="idaverde">verde</label><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Locais para compras</legend>
+            <label for="idestado">Estados</label>
+            <select name="estado" id="idestado">
+                        <option value="" selected disabled>Selecione um Estado</option>
+                <optgroup label="Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirio Santo</option>
+                </optgroup>
+                <optgroup label="sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Obervações</legend>
+            <textarea name="obs" id="idobs" cols="100" rows="25" maxlength="2000"></textarea>
+        </fieldset>
+
+
+
+        <input type="submit" value="Cadastrar">
+
+    </form>
+
+
+</body>
+</html>
