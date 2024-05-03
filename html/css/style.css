@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    border: 1px solid black;
+    width: 1000px;
+} */
+
+/* html{
+    font-size: 20px;
+} */
+
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.box1{
+    background-color: tomato;
+    width: 50vw;
+    height: 40vh;
+    font-size: 20x;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+img{
+    width: 100%;
+
+}
+p{
+    /* font-size: 1.5em; tamanho relativo ao elemento pai */
+    font-size: 1.5rem; /*tamanho relativo ao elemento raiz*/
+    font-size: 1.5rem; /* (0-100)tamanho referente a janea do navegado */
+}
+
+.box2{
+    background-color: royalblue;
+    width: 50vw;
+    height: 40vh;
+}
