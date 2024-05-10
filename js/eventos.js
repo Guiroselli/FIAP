@@ -1,6 +1,7 @@
 let texto = document.querySelector('#idTexto')
 
-texto.addEventListener('kaydown', ()=>{
+
+texto.addEventListener('keydown', ()=>{
    let resultado = document.querySelector('#res')
    resultado.innerHTML = ''
    texto.value = ''
@@ -8,7 +9,7 @@ texto.addEventListener('kaydown', ()=>{
 
 
 //Mostras o codigo da tecla
-texto.addEventListener('kayup', ()=>{
+texto.addEventListener('keyup', (e)=>{
     let resultado = document.querySelector('#res')
-    resultado.innerHTML = `A tecal ${texto.value} = ${e.keyCode}`
+    resultado.innerHTML = `A tecla ${texto.value} = ${e.keyCode}`
 })
